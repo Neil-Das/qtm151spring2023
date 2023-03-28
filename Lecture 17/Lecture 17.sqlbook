@@ -100,7 +100,8 @@ Try it yourself!
 -- Make sure to deparate arguments by a semicolon!
 
 
-
+INSERT INTO drivers  VALUES (5, 'Neil Das', 'Indian',999);
+INSERT INTO drivers VALUES (6, 'Daisy Cossio', 'Mexican', 2)
 
 -- SQLBook: Markup
 # <span style="color:darkblue"> II. Dataset Operations </span>
@@ -113,7 +114,7 @@ Extracting columns from table
 -- SELECT extracts certain COLUMNS
 -- FROM is used to indicate the source table
 
-SELECT driver_id nationality FROM drivers;
+SELECT driver_id, nationality FROM drivers;
 -- SQLBook: Markup
 <font size="5"> 
 
@@ -187,7 +188,7 @@ Try it yourself!
 with more than 60 victories
 -- SQLBook: Code
 -- Write your own code!
-
+SELECT nationality, driver_id FROM drivers WHERE victories > 60;
 
 
 
